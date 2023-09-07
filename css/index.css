@@ -1,8 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
+@keyframes up-down {
+    0% {
+        transform: translateY(-8px);
+    }
+
+    25% {
+        transform: translateY(8px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    75% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(-8px)
+    }
+}
+
 :root {
     --background-color: rgb(33, 37, 43);
+    --footer-color: rgb(21, 26, 33);
     --link-color: rgb(42, 186, 197);
     --light-green: #60d748;
     --dark-torquise: #8ee6ab;
@@ -23,11 +46,47 @@
     --grey: rgb(107, 121, 139)
 }
 
+/* Useful Transision  */
+.center-right-left, .center-top-bottom, .center-corner {
+    background-position: 50% 50%;
+}
+
+.to-left {
+    background-position: 100% 50%;
+}
+
+.to-right {
+    background-position: 0% 50%;
+}
+
+.to-top {
+    background-position: 50% 100%;
+}
+
+.to-bottom {
+    background-position: 50% 0%;
+}
+
+.center-right-left, .to-left, .to-right {
+    background-size: 0% 100%;
+}
+
+.center-top-bottom, .to-top, .to-bottom {
+    background-size: 100% 0%;
+}
+
+.center-corner {
+    background-size: 0% 0%;
+}
+
+
 * {
-    padding: none;
-    margin: none;
-    border: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 html {
@@ -39,10 +98,18 @@ html {
 body {
     background-color: var(--background-color);
 }
+
+.icon-gsx {
+    position: absolute;
+    top: -2em;
+    left: 1em;
+    width: 10em;
+}
+
 .navlist {
     display: flex;
     gap: 1em;
-    justify-content: center;
+    justify-content: flex-end;
     list-style-type: none;
     margin-top: -0.3em;
     padding: 1em;
@@ -51,8 +118,8 @@ body {
 .navitem {
     display: inline-block;
     padding: 0.5em;
-    border: 5px solid black;
-    color: whitesmoke;
+    border: 3px solid white;
+    color: black;
     border-radius: 10px;
     background-image: linear-gradient(black, black);
     background-repeat: no-repeat;
@@ -60,9 +127,10 @@ body {
     cursor: pointer;
 }
 
-.navitem:hover:not(:first-child), .navitem:hover:not(:first-child){
+.navitem:hover{
     background-size: 100% 100%;
     color: white;
+    border-color: white;
 }
 
 .userprofile{
@@ -84,28 +152,70 @@ body {
     
 }
 
-/* Useful Transision  */
-.center-right-left, .center-top-bottom, .center-corner {
-  background-position: 50% 50%;
+.icon {
+    margin-top: -0.4em;
 }
-.to-left {
-  background-position: 100% 50%;
+
+.greetings {
+    color: white;
+    font-size: 3em;
+    margin-left: 1em;
+    font-family: monospace;
+    color: var(--custom-cyan);
+    text-shadow: black 0.1em 0.1em;
 }
-.to-right {
-  background-position: 0% 50%;
+
+.information {
+    margin-left: 3.1em;
+    margin-top: 0.8em;
+    color: var(--custom-lavender);
+    text-shadow: black 0.1em 0.1em;
 }
-.to-top {
-  background-position: 50% 100%;
+
+#welcome {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: visibility 2s, opacity 2s, transform 1.5s;
 }
-.to-bottom {
-  background-position: 50% 0%;
+
+#img {
+    position: absolute;
+    top: 7em;
+    right: 2em;
+    animation: up-down 5s infinite ease;
 }
-.center-right-left, .to-left, .to-right {
-  background-size: 0% 100%;
+
+.footer-container {
+    padding: 2em;
+    background-color: var(--footer-color);
+    color: white;
 }
-.center-top-bottom, .to-top, .to-bottom {
-  background-size: 100% 0%;
+
+h5 {
+    letter-spacing: 0.1em;
 }
-.center-corner {
-  background-size: 0% 0%;
+
+.footer-informations {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.vertical-display {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-url{
+    color: white;
+    text-decoration: none
+}
+
+
+.footer-url:hover, .footer-url:focus{
+    color: lightblue;
+}
+.footer-url:visited{
+    
 }
