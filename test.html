@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+  display: inline-block;
+  padding: 15px 70px;
+  border: 5px solid #B17461;
+  color: #B17461;
+  font-size: 30px;
+  background-image: linear-gradient(#B17461, #B17461);
+  background-repeat: no-repeat;
+  transition: background-size .5s, color .5s;
+}
+.center-right-left, .center-top-bottom, .center-corner {
+  background-position: 50% 50%;
+}
+.to-left {
+  background-position: 100% 50%;
+}
+.to-right {
+  background-position: 0% 50%;
+}
+.to-top {
+  background-position: 50% 100%;
+}
+.to-bottom {
+  background-position: 50% 0%;
+}
+.center-right-left, .to-left, .to-right {
+  background-size: 0% 100%;
+}
+.center-top-bottom, .to-top, .to-bottom {
+  background-size: 100% 0%;
+}
+.center-corner {
+  background-size: 0% 0%;
+}
+div:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+    </style>
+</head>
+<body>
+    <div class="center-right">
+        hello
+    </div>
+</body>
+</html>

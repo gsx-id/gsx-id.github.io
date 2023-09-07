@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+    --background-color: rgb(33, 37, 43);
+    --link-color: rgb(42, 186, 197);
+    --light-green: #60d748;
+    --dark-torquise: #8ee6ab;
+    --geno-green: #64dd6e;
+    --creme-green: #bbe071;
+
+    /* Custom Colors from AYU theme ;) */
+    --custom-blue: rgb(62, 166, 253);
+    --custom-cyan: rgb(149, 230, 203);
+    --custom-lavender: rgb(223, 191, 255);
+    --custom-green: rgb(212, 254, 127);
+    --custom-red: rgb(242, 158, 116);
+    --custom-orange: rgb(255, 209, 115);
+
+    /* Dark Theme */
+    --dark-blue: rgb(31, 36, 48);
+    --shadow: rgb(46, 77, 112);
+    --grey: rgb(107, 121, 139)
+}
+
+* {
+    padding: none;
+    margin: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+.navlist {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: -0.3em;
+    padding: 1em;
+}
+
+.navitem {
+    display: inline-block;
+    padding: 0.5em;
+    border: 5px solid black;
+    color: whitesmoke;
+    border-radius: 10px;
+    background-image: linear-gradient(black, black);
+    background-repeat: no-repeat;
+    transition: background-size .5s, color .5s;
+    cursor: pointer;
+}
+
+.navitem:hover:not(:first-child), .navitem:hover:not(:first-child){
+    background-size: 100% 100%;
+    color: white;
+}
+
+.userprofile{
+    margin-right: auto;
+    border: none;
+}
+
+.userprofile>*{
+    color: white;
+    text-decoration: none;
+}
+
+.link{
+    color: inherit;
+    text-decoration: none
+}
+
+.link:hover, .link:focus{
+    
+}
+
+/* Useful Transision  */
+.center-right-left, .center-top-bottom, .center-corner {
+  background-position: 50% 50%;
+}
+.to-left {
+  background-position: 100% 50%;
+}
+.to-right {
+  background-position: 0% 50%;
+}
+.to-top {
+  background-position: 50% 100%;
+}
+.to-bottom {
+  background-position: 50% 0%;
+}
+.center-right-left, .to-left, .to-right {
+  background-size: 0% 100%;
+}
+.center-top-bottom, .to-top, .to-bottom {
+  background-size: 100% 0%;
+}
+.center-corner {
+  background-size: 0% 0%;
+}
