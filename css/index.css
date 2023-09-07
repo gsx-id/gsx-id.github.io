@@ -52,6 +52,7 @@ body {
     display: inline-block;
     padding: 0.5em;
     border: 5px solid black;
+    border-radius: 10px;
     color: whitesmoke;
     border-radius: 10px;
     background-image: linear-gradient(black, black);
@@ -86,26 +87,26 @@ body {
 
 /* Useful Transision  */
 .center-right-left, .center-top-bottom, .center-corner {
-  background-position: 50% 50%;
+    background-position: 50% 50%;
 }
 .to-left {
-  background-position: 100% 50%;
+    background-position: 100% 50%;
 }
 .to-right {
-  background-position: 0% 50%;
+    background-position: 0% 50%;
 }
 .to-top {
-  background-position: 50% 100%;
+    background-position: 50% 100%;
 }
 .to-bottom {
-  background-position: 50% 0%;
+    background-position: 50% 0%;
 }
 .center-right-left, .to-left, .to-right {
-  background-size: 0% 100%;
+    background-size: 0% 100%;
 }
 .center-top-bottom, .to-top, .to-bottom {
-  background-size: 100% 0%;
+    background-size: 100% 0%;
 }
 .center-corner {
-  background-size: 0% 0%;
+    background-size: 0% 0%;
 }

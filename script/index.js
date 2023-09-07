@@ -1,7 +1,10 @@
-const listItems = document.getElementsByClassName("navlist")
-listItems.forEach(element => {
-    if (element )
-    element.addEventListener("click", (event) => {
-        window.open("http://localhost:5500/", "_self")
-    })
-});
+const navitems = document.getElementById("navitems");
+
+for (let i = 0; i < navitems.children.length; i++) {
+    let child = navitems.children[i];
+    if (child.id != 'userprofile') {
+        child.addEventListener("click", (event) => {
+            window.open("./", "_self");
+        });   
+    }
+}
