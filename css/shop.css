@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+    --background-color: rgb(33, 37, 43);
+    --foreground-color: rgb(66, 73, 83);
+    --footer-color: rgb(21, 26, 33);
+    --test-color: rgb(83, 87, 92);
+    --link-color: rgb(42, 186, 197);
+    --light-green: #60d748;
+    --dark-torquise: #8ee6ab;
+    --geno-green: #64dd6e;
+    --creme-green: #bbe071;
+    --card-color: rgb(40, 0, 49);
+
+    /* Custom Colors from AYU theme ;) */
+    --custom-blue: rgb(62, 166, 253);
+    --custom-cyan: rgb(149, 230, 203);
+    --custom-lavender: rgb(223, 191, 255);
+    --custom-green: rgb(212, 254, 127);
+    --custom-red: rgb(242, 158, 116);
+    --custom-orange: rgb(255, 209, 115);
+
+    /* Dark Theme */
+    --dark-blue: rgb(31, 36, 48);
+    --shadow: rgb(46, 77, 112);
+    --grey: rgb(107, 121, 139)
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+main {
+    width: fit-content;
+    padding: 3em;
+    margin: 0 auto;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: content;
+    gap: 2em;
+    padding: 1em;
+}
+
+.game-card{
+    border-radius: 10px;
+    background-color: var(--foreground-color);
+    padding-bottom: 1em;
+    color: white;
+    overflow-y: hidden;
+    transition: transform 500ms, color 500ms;
+    /* background-image: linear-gradient(to bottom right, red, coral); */
+    
+}
+
+.game-card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.game-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-title {
+    color: inherit;
+    font-size: 0.7em;
+    margin: 0 auto;
+}
+
+#mobile:hover {
+    color: var(--custom-blue);
+    cursor: pointer;
+}
+
+#valorant:hover {
+    color: #e74e50;
+    cursor: pointer;
+}
+
+#PUBG:hover {
+    color: var(--custom-orange);
+    cursor: pointer;
+}
+
+.pattern{
+    clip-path: polygon(0 48%,9% 48%,18% 65%,27% 49%,36% 72%,45% 58%,55% 70%,64% 58%,73% 86%,82% 48%,91% 63%,100% 70%,100% calc(100% + 1px),0 calc(100% + 1px));
+    background-color: var(--foreground-color);
+    height: 25px;
+    margin-top: -23px
+}
+
+.for-valorant {
+}

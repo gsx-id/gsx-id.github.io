@@ -1,0 +1,56 @@
+.icon-gsx {
+    position: absolute;
+    top: -0.5em;
+    left: 1em;
+    width: 5em;
+}
+
+.navbar {
+    background-color: var(--footer-color);
+}
+
+.navlist {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-top: -0.3em;
+    padding: 1em;
+}
+
+.navitem {
+    display: inline-block;
+    padding: 0.5em;
+    border: 3px solid white;
+    color: var(--dark-torquise);
+    border-radius: 10px;
+    background-image: linear-gradient(black, black);
+    background-repeat: no-repeat;
+    transition: background-size .5s, color .5s;
+    cursor: pointer;
+}
+
+.navitem:hover{
+    background-size: 100% 100%;
+    color: white;
+    border-color: white;
+}
+
+.userprofile{
+    margin-right: auto;
+    border: none;
+}
+
+.userprofile>*{
+    color: white;
+    text-decoration: none;
+}
+
+.link{
+    color: inherit;
+    text-decoration: none
+}
+
+.link:hover, .link:focus{
+    
+}

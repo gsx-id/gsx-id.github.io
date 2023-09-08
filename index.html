@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="img/gsx-icon(old).png" type="image/x-icon">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="img/gsx-icon.png" type="image/x-icon">
     <title>Home</title>
 </head>
 <body>
-    <div class="image-container">
-        <img src="img/gsx-icon.png" alt="gsx-icon" class="icon-gsx">
-    </div>
     <nav class="navbar">
         <ul class="navlist" id="navitems">
             <!-- <li class="userprofile ignored">
                 <a class="" href="">TheGenocides</a>
             </li> -->
-            <li class="navitem center-corner button1">
-                <a class="link" href="./index.html">Shop Now!</a>
+            <li class="icon-">
+                <img src="img/gsx-icon.png" alt="gsx-icon" class="icon-gsx">
             </li>
-            <li class="navitem to-right button2">
+            <li class="navitem center-corner button1" id="shop">
+                <a class="link" href="./shop.html">Shop Now!</a>
+            </li>
+            <li class="navitem to-right button2" id="history">
                 <a class="link" href="./index.html">History</a>
             </li>
-            <li class="navitem center-right-left button3">
-                <a class="link" href="./index.html">Info</a>
+            <li class="navitem center-right-left button3" id="home">
+                <a class="link" href="./">Home</a>
             </li>
         </ul>
     </nav>
@@ -39,7 +42,7 @@
         <img id="img" src="img/props-playing-video-games-on-laptop-1.png" alt="">
     </div>
     <br><br><br><br><br><br><br><br>
-    <div class="footer-container">
+    <footer class="footer-container">
         <ul class="footer-informations">
             <!-- Change Content Bellow -->
             <li>
@@ -73,7 +76,7 @@
         </ul>
         <br><br><br>
         <p align="center">&lt;&lt;&lt; &copy; GSX 2023 &gt;&gt;&gt;</p>
-    </div>
+    </footer>
 </body>
 <script src="script/index.js"></script>
 </html>

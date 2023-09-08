@@ -1,0 +1,35 @@
+.footer-container {
+    padding: 1.5em;
+    background-color: var(--footer-color);
+    color: white;
+    font-size: 0.6em;
+}
+
+h5 {
+    letter-spacing: 0.1em;
+    color: black;
+}
+
+.footer-informations {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.vertical-display {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-url{
+    color: white;
+    text-decoration: none
+}
+
+.footer-url:hover, .footer-url:focus{
+    color: var(--dark-torquise);
+}
+
+.footer-url:visited{
+    
+}
