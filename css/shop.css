@@ -60,6 +60,13 @@ main {
     flex-basis: content;
     gap: 2em;
     padding: 1em;
+    overflow-y: hidden;
+}
+
+
+.game-card {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .game-card{
@@ -68,9 +75,8 @@ main {
     padding-bottom: 1em;
     color: white;
     overflow-y: hidden;
-    transition: transform 500ms, color 300ms, background-image 1s;
+    transition: transform 500ms, color 300ms, visibility 2s, opacity 2s;
     /* background-image: linear-gradient(to bottom right, red, coral); */
-    
 }
 
 .game-card:hover{
