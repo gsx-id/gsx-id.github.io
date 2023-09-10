@@ -23,7 +23,7 @@
 .navitem {
     display: inline-block;
     padding: 0.5em;
-    border: 3px solid white;
+    border: 2px solid white;
     color: var(--dark-torquise);
     border-radius: 10px;
     background-image: linear-gradient(black, black);
