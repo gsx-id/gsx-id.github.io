@@ -1,0 +1,101 @@
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+        font-size: 0.6rem;
+    }
+
+    #img {
+        width: 10em;
+        top: 13em;
+        right: 5em;
+    }
+
+    .game-card {
+        width: 13em;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+        font-size: 1rem;
+    }
+
+    .welcome {
+        font-size: 0.8rem;
+    }
+
+    #img {
+        width: 10em;
+        top: 16em;
+        right: 8.5em;
+    }
+
+    .game-card {
+        width: 8.3em;
+    }
+
+    .footer-item {
+        font-size: 0.5rem;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .footer-item {
+        font-size: 0.7rem;
+    }
+
+    #img {
+        top: 6em;
+        right: 1em;
+        width: 13em;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        font-size: 1.2rem;
+    }
+
+    .game-card {
+        width: 6.8em;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--test-color);
+    border-radius: 10px;
+    border: 2px solid rgb(92, 90, 90);
+}
+
+/* Handle on active */
+::-webkit-scrollbar-thumb:active {
+    background: rgb(92, 90, 90);
+    border: 2px solid grey;
+}
