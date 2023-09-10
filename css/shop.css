@@ -126,10 +126,3 @@ main {
     color: var(--geno-green);
     cursor: pointer;
 }
-
-.pattern{
-    clip-path: polygon(0 48%,9% 48%,18% 65%,27% 49%,36% 72%,45% 58%,55% 70%,64% 58%,73% 86%,82% 48%,91% 63%,100% 70%,100% calc(100% + 1px),0 calc(100% + 1px));
-    background-image: linear-gradient(to bottom right, rgb(41, 46, 52), var(--foreground-color), rgb(41, 46, 52));
-    height: 25px;
-    margin-top: -26px
-}
