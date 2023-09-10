@@ -9,6 +9,9 @@ function displayItem(item){
 let milleseconds = 220
 
 Array.from(cards.children).forEach(child => {
+    child.addEventListener("click", (_event) => {
+        window.open(`form.html?item=${child.id}`, "_blank")
+    })
     setTimeout(() => {
         child.style.visibility = "visible"
         child.style.opacity = 1
