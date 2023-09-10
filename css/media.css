@@ -22,11 +22,7 @@
         right: 3.8em;
     }
 
-    .game-card {
-        width: 12em;
-    }
-
-    .game-img {
+    .game-card, .game-img {
         width: 12em;
     }
 
@@ -47,11 +43,7 @@
         right: 5em;
     }
 
-    .game-card {
-        width: 13em;
-    }
-
-    .game-img {
+    .game-card, .game-img {
         width: 13em;
     }
 
@@ -76,11 +68,7 @@
         right: 8.5em;
     }
 
-    .game-card {
-        width: 8.3em;
-    }
-
-    .game-img {
+    .game-card, .game-img {
         width: 8.3em;
     }
 
@@ -112,7 +100,7 @@
         font-size: 1.2rem;
     }
 
-    .game-card {
+    .game-card, .game-img {
         width: 6.8em;
     }
 }
