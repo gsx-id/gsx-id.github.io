@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="shortcut icon" href="img/shopping-cart.png" type="image/x-icon">
     <title>Shop</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar container">
         <ul class="navlist" id="navitems">
             <!-- <li class="userprofile ignored">
                 <a class="" href="">TheGenocides</a>
@@ -31,7 +32,7 @@
         </ul>
     </nav>
     <br><br><br><br>
-    <main>
+    <main class="container">
         <section class="game-container", id="game-cards">
             <div class="game-card" id="mobile">
                 <div class="img-container">
@@ -108,10 +109,9 @@
         </section>
     </main>
     <br><br><br><br>
-    <footer class="footer-container">
+    <footer class="footer-container container">
         <ul class="footer-informations">
-            <!-- Change Content Bellow -->
-            <li>
+            <li class="footer-item">
                 <h5>Contact</h5>
                 <br>
                 <ul class="vertical-display">
@@ -120,7 +120,7 @@
                     <li>Peter</li>
                 </ul>
             </li>
-            <li>
+            <li class="footer-item">
                 <h5>Social Media</h5>
                 <br>
                 <ul class="vertical-display">
@@ -129,8 +129,7 @@
                     <li><a class="footer-url" href="https://www.youtube.com">Youtube</a></li>
                 </ul>
             </li>
-            <li>
-                <!-- Change bellow content -->
+            <li class="footer-item">
                 <h5>Special</h5> 
                 <br>
                 <ul class="vertical-display">
@@ -141,7 +140,7 @@
             </li>
         </ul>
         <br><br><br>
-        <p align="center">&lt;&lt;&lt; &copy; GSX 2023 &gt;&gt;&gt;</p>
+        <p class="footer-item" align="center">&lt;&lt;&lt; &copy; GSX 2023 &gt;&gt;&gt;</p>
     </footer>
 </body>
 <script src="script/navbar.js"></script>
