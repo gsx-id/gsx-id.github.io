@@ -1,13 +1,13 @@
-.footer-container {
-    padding: 1.5em;
-    background-color: var(--footer-color);
-    color: white;
-    font-size: 0.6em;
-}
-
 h5 {
     letter-spacing: 0.1em;
     color: black;
+}
+
+.footer-container {
+    padding-top: 1em;
+    background-color: var(--footer-color);
+    color: white;
+    font-size: 0.6em;
 }
 
 .footer-informations {
@@ -28,8 +28,4 @@ h5 {
 
 .footer-url:hover, .footer-url:focus{
     color: var(--dark-torquise);
-}
-
-.footer-url:visited{
-    
 }
