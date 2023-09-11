@@ -38,27 +38,27 @@
         "quantities": [
             {
                 "howMany": "300",
-                "price": "33.000"
+                "price": "32.000"
             },
             
             {
                 "howMany": "625",
-                "price": "66.000"
-            },
-            
-            {
-                "howMany": "925",
-                "price": "99.000"
+                "price": "64.000"
             },
             
             {
                 "howMany": "1125",
-                "price": "115.000"
+                "price": "112.000"
             },
             
             {
-                "howMany": "1425",
-                "price": "148.000"
+                "howMany": "1650",
+                "price": "160.000"
+            },
+            
+            {
+                "howMany": "2275",
+                "price": "224.000"
             }
         ]
     },
@@ -66,7 +66,7 @@
     "roblox": {
         "name": "Roblox",
         "currency": "Robux",
-        "accountInformation": "username",
+        "accountInformation": "Username",
         "quantities": [
             {
                 "howMany": "100",
