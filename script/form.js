@@ -6,7 +6,8 @@ const description = document.getElementById("description")
 const topupMessage = document.getElementById("topup-message")
 const itemName = searchParams.get("item")
 const submitBtn = document.getElementById("submit")
-let item, target;
+const accountInput = document.getElementById("account") 
+let item, target, overrideCurrency;
 
 if (data.hasOwnProperty(itemName)){
     Object.keys(data).forEach(key => {
@@ -17,32 +18,62 @@ if (data.hasOwnProperty(itemName)){
         } else if (itemName == key && itemName == "roblox"){
             item = data.roblox;
         } else if (itemName == key && itemName == "PUBG"){
-            item = data.pubg;
+            item = data.PUBG;
         } else if (itemName == key && itemName == "genshin"){
             item = data.genshin;
         } else if (itemName == key && itemName == "freeFire"){
             item = data.freeFire
-        }
+        } 
     })
 }
-description.innerText = `You want to buy ${item.currency} from ${item.name}`
-Array.from(checkboxes.children).forEach((el, index) => {
-    let label = el.children[0], checkbox = el.children[1];
-    label.setAttribute("for", itemName);
-    label.innerText = item.quantities[index];
-    checkbox.setAttribute("value", new String(item.quantities[index]));
-    checkbox.setAttribute("id", itemName);
 
-    checkbox.addEventListener("click", (event) => {
+if (!item){
+    alert(`Cannot find item: ${itemName}`)
+    window.open("shop.html", "_self")
+}
+description.innerText = `You want to buy ${item.currency} from ${item.name}`
+accountInput.innerHTML = `
+<label for="input-information">
+    Please Insert your account information! 
+</label><br>
+<input type="text" name="input-information" id="input-information" placeholder="${item.accountInformation}" autofocus required>
+`
+
+Array.from(checkboxes.children).forEach((el, index) => {
+    let quantity = item.quantities[index];
+    if (quantity.overrideCurrency){
+        el.innerHTML = `${quantity.howMany} <br>${quantity.price} IDR`;
+        overrideCurrency = quantity
+
+    } else {
+        el.innerHTML = `${quantity.howMany} ${item.currency}<br>${quantity.price} IDR`;
+    }
+    el.setAttribute("value", quantity.howMany);
+    el.setAttribute("price", quantity.price);
+    el.setAttribute("id", itemName);
+    el.addEventListener("click", (event) => {
         if (target){
-            target.checked = false
+            target.style.backgroundColor = "white";
+            target.style.color = "black"
+            target = event.target;
+        } else {
+            target = event.target;
         }
-        target = event.target
+        target.style.backgroundColor = "red"
+        target.style.color = "white"
     })
 })
 
 topupMessage.innerText = `Please pick the nominal to Top Up`
 submitBtn.addEventListener("click", (_event) => {
-    localStorage.setItem("currencyName", item.currency)
-    localStorage.setItem("currency", target.value)
+    localStorage.setItem("time", new Date().toDateString())
+    if (overrideCurrency){
+        localStorage.setItem("currencyName", overrideCurrency.howMany);
+        localStorage.setItem("currency", overrideCurrency.howMany);
+    } else {
+        localStorage.setItem("currencyName", item.currency)
+        localStorage.setItem("currency", target.getAttribute("value"))
+    }
+    localStorage.setItem("price", target.getAttribute("price"))
+    localStorage.setItem("accountInformation", document.getElementById("input-information").value)
 })
