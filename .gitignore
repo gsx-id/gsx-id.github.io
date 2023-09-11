@@ -1,4 +1,4 @@
 .vscode
-*.json
+jsconfig.json
 test.html
 script/test
