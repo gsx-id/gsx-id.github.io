@@ -2,31 +2,193 @@
     "mobile": {
         "name": "Mobile Legends",
         "currency": "Diamonds",
-        "quantities": [30, 50, 100, 120, 200]
+        "accountInformation": "ID (Server ID)",
+        "quantities": [
+            {
+                "howMany": "172",
+                "price": "38.000"
+            },
+            
+            {
+                "howMany": "257",
+                "price": "56.000"
+            },
+            
+            {
+                "howMany": "429",
+                "price": "90.000"
+            },
+            
+            {
+                "howMany": "706",
+                "price": "150.000"
+            },
+            
+            {
+                "howMany": "1412",
+                "price": "295.000"
+            }
+        ]
     },
     
     "valorant": {
         "name": "Valorant",
         "currency": "Valorant Points",
-        "quantities": [125, 420, 700, 1200, 2137]
+        "accountInformation": "Riot ID",
+        "quantities": [
+            {
+                "howMany": "300",
+                "price": "33.000"
+            },
+            
+            {
+                "howMany": "625",
+                "price": "66.000"
+            },
+            
+            {
+                "howMany": "925",
+                "price": "99.000"
+            },
+            
+            {
+                "howMany": "1125",
+                "price": "115.000"
+            },
+            
+            {
+                "howMany": "1425",
+                "price": "148.000"
+            }
+        ]
     },
     
     "roblox": {
         "name": "Roblox",
         "currency": "Robux",
-        "quantities": [50, 120, 300, 500, 700]
+        "accountInformation": "username",
+        "quantities": [
+            {
+                "howMany": "100",
+                "price": "10.000"
+            },
+            
+            {
+                "howMany": "200",
+                "price": "20.000"
+            },
+            
+            {
+                "howMany": "300",
+                "price": "30.000"
+            },
+            
+            {
+                "howMany": "400",
+                "price": "40.000"
+            },
+            
+            {
+                "howMany": "Premium",
+                "overrideCurrency": true,
+                "price": "90.000"
+            }
+        ]
     },
     
     "genshin": {
-        "name": "Genshin Impact",
-        "currency": "Mora",
-        "quantities": [100, 230, 500, 650, 1200]
+        "name": "Genshin Impact", 
+        "currency": "Genesis Crystal",
+        "accountInformation": "UID/SERVER",
+        "quantities": [
+            {
+                "howMany": "60",
+                "price": "11.200"
+            },
+            
+            {
+                "howMany": "330",
+                "price": "56.800"
+            },
+            
+            {
+                "howMany": "1090",
+                "price": "170.800"
+            },
+            
+            {
+                "howMany": "2240",
+                "price": "370.300"
+            },
+            
+            {
+                "howMany": "3880",
+                "price": "569.800"
+            }
+        ]
     },
     
     "freeFire": {
         "name": "Free Fire",
         "currency": "Diamonds",
-        "quantities": [100, 230, 500, 650, 1200]
-    }
+        "accountInformation": "User ID",
+        "quantities": [
+            {
+                "howMany": "100",
+                "price": "13.500"
+            },
+            
+            {
+                "howMany": "140",
+                "price": "18.500"
+            },
+            
+            {
+                "howMany": "200",
+                "price": "32.000"
+            },
+            
+            {
+                "howMany": "255",
+                "price": "43.500"
+            },
+            
+            {
+                "howMany": "425",
+                "price": "53.500"
+            }
+        ]
+    },
     
+    "PUBG": {
+        "name": "PUBG",
+        "currency": "UC",
+        "accountInformation": "UID",
+        "quantities": [
+            {
+                "howMany": "105",
+                "price": "19.000"
+            },
+            
+            {
+                "howMany": "156",
+                "price": "28.000"
+            },
+            
+            {
+                "howMany": "210",
+                "price": "38.000"
+            },
+            
+            {
+                "howMany": "253",
+                "price": "48.000"
+            },
+            
+            {
+                "howMany": "419",
+                "price": "76.000"
+            }
+        ]
+    } 
 }
