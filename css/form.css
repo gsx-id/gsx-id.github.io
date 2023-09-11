@@ -25,7 +25,11 @@ body {
 
 .checkboxes {
     display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
     gap: 1em;
+    padding: 0.5em;
 }
 
 .step {
@@ -62,6 +66,21 @@ body {
     transform: scale(1.1);
 }
 
-input[type="checkbox"] {
-    width: 2em;
+.checkbox-box {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0.3em;
+    width: fit-content;
+    transition: background-color 350ms, color 350ms;
+    background-color: white;
+}
+
+.checkbox-box:hover {
+    cursor: pointer;
+}
+
+#input-information {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.3em;
 }

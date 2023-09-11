@@ -17,9 +17,7 @@ body {
     background-color: var(--background-color);
 }
 
-#headset {
-    margin-left: 18em;
-}
+
 
 h1 {
     transition: opacity 200ms, visibility 200ms;
@@ -29,6 +27,7 @@ h1 {
     display: flex;
     justify-content: center;
     color: black;
+    padding: 1em;
 }
 
 .receipt {
@@ -39,4 +38,25 @@ h1 {
     transition: opacity 200ms, visibility 200ms;
     visibility: hidden;
     opacity: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#copybutton {
+    font-size: 0.6em;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    background-image: linear-gradient(to top right, green, lime);
+    transition: transform 200ms;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+    padding-top: 1em
+}
+
+#copybutton:hover, #copybutton:focus {
+    cursor: pointer;
+    transform: scale(1.1);
 }
