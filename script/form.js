@@ -1,5 +1,5 @@
 import data from '../data.json' assert { type: 'json' };
-
+alert("Test1")
 const searchParams = new URLSearchParams(window.location.search);
 const checkboxes = document.getElementById("checkboxes")
 const description = document.getElementById("description")
@@ -9,6 +9,7 @@ const submitBtn = document.getElementById("submit")
 const accountInput = document.getElementById("account") 
 let item, target, overrideCurrency;
 
+alert("Test2")
 if (data.hasOwnProperty(itemName)){
     Object.keys(data).forEach(key => {
         if (itemName == key && itemName == "mobile"){
@@ -26,11 +27,12 @@ if (data.hasOwnProperty(itemName)){
         } 
     })
 }
-
+alert("Test3")
 if (!item){
     alert(`Cannot find item: ${itemName}`)
     window.open("shop.html", "_self")
 }
+alert("Test4")
 description.innerText = `You want to buy ${item.currency} from ${item.name}`
 accountInput.innerHTML = `
 <label for="input-information">
@@ -38,7 +40,7 @@ accountInput.innerHTML = `
 </label><br>
 <input type="text" name="input-information" id="input-information" placeholder="${item.accountInformation}" autofocus required>
 `
-
+alert("Test5")
 Array.from(checkboxes.children).forEach((el, index) => {
     let quantity = item.quantities[index];
     if (quantity.overrideCurrency){
