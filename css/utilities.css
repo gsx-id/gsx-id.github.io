@@ -73,3 +73,13 @@
 .center-corner {
     background-size: 0% 0%;
 }
+
+#spoiler {
+    background-color: black;
+    color: black;
+    user-select: none;
+}
+
+#spoiler:hover {
+    cursor: pointer;
+}
