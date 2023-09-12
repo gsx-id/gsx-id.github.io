@@ -6,7 +6,7 @@
 }
 
 .navbar {
-    background-color: var(--footer-color);
+    background-color: var(--nav-color);
 }
 
 .navlist {
@@ -23,10 +23,10 @@
 .navitem {
     display: inline-block;
     padding: 0.5em;
-    border: 2px solid white;
+    border: 2px solid black;
     color: var(--dark-torquise);
-    border-radius: 10px;
-    background-image: linear-gradient(black, black);
+    border-radius: 8px;
+    background-image: linear-gradient(#92AA83, #92AA83);
     background-repeat: no-repeat;
     transition: background-size .5s, color .5s;
     cursor: pointer;

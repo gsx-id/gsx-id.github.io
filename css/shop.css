@@ -40,8 +40,9 @@ main {
 }
 
 .game-card{
+    border: 3px solid black;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom right, var(--foreground-color), rgb(41, 46, 52));
+    background-image: linear-gradient(to bottom right, var(--card-color2), var(--card-color1));
     padding-bottom: 1em;
     color: white;
     overflow-y: hidden;
@@ -52,7 +53,7 @@ main {
 .game-card:hover{
     transform: scale(1.1);
     cursor: pointer;
-    background-image: linear-gradient(to bottom right, rgb(41, 46, 52), var(--foreground-color));
+    background-image: linear-gradient(to bottom right, var(--card-color1), var(--card-color2));
 }
 
 .game-title-container {

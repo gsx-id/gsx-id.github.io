@@ -23,18 +23,12 @@ h1 {
     transition: opacity 200ms, visibility 200ms;
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    color: black;
-    padding: 1em;
-}
-
 .receipt {
     padding: 1em;
     border-radius: 10px;
-    background-color: aliceblue;
-    width: 40ch;
+    background-image: linear-gradient(to bottom right, lightblue, aliceblue);;
+    color: black;
+    width: 45ch;
     transition: opacity 200ms, visibility 200ms;
     visibility: hidden;
     opacity: 0;

@@ -1,26 +1,10 @@
-.fullbg { 
-    background-color: var(--footer-color);
-}
-
-.container{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
 @media (min-width: 375px) {
     .container {
         max-width: 375px;
         font-size: 0.5rem;
     }
 
-    #img {
-        width: 8em;
-        top: 11em;
-        right: 3.8em;
-    }
+    
 
     .game-card, .game-img {
         width: 12em;
@@ -37,11 +21,7 @@
         font-size: 0.6rem;
     }
 
-    #img {
-        width: 10em;
-        top: 13em;
-        right: 5em;
-    }
+    
 
     .game-card, .game-img {
         width: 13em;
@@ -62,11 +42,7 @@
         font-size: 0.8rem;
     }
 
-    #img {
-        width: 10em;
-        top: 16em;
-        right: 8.5em;
-    }
+    
 
     .game-card, .game-img {
         width: 8.3em;
@@ -86,12 +62,6 @@
     .footer-item {
         font-size: 0.7rem;
     }
-
-    #img {
-        top: 6em;
-        right: 1em;
-        width: 13em;
-    }
 }
 
 @media (min-width: 1280px) {
@@ -104,6 +74,7 @@
         width: 6.8em;
     }
 }
+    
 
 @media (min-width: 1536px) {
     .container {

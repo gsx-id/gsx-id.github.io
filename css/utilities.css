@@ -2,8 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 :root {
-    --background-color: rgb(33, 37, 43);
-    --foreground-color: rgb(66, 73, 83);
+    --background-color: #80A497;
+    --font-color:  #B4EDD2;
+    --nav-color: #343D4C;
+    --card-color1: #7a968b;
+    --card-color2: #526A61;
+    /* --background-color: rgb(33, 37, 43);*/
+    /* --foreground-color: rgb(66, 73, 83);
     --footer-color: rgb(21, 26, 33);
     --test-color: rgb(83, 87, 92);
     --link-color: rgb(42, 186, 197);
@@ -11,7 +16,7 @@
     --dark-torquise: #8ee6ab;
     --geno-green: #64dd6e;
     --creme-green: #bbe071;
-    --card-color: rgb(40, 0, 49);
+    --card-color: rgb(40, 0, 49); */
 
     /* Custom Colors from AYU theme ;) */
     --custom-blue: rgb(62, 166, 253);
@@ -22,10 +27,12 @@
     --custom-orange: rgb(255, 209, 115);
 
     /* Dark Theme */
-    --dark-blue: rgb(31, 36, 48);
+    /* --dark-blue: rgb(31, 36, 48);
     --shadow: rgb(46, 77, 112);
-    --grey: rgb(107, 121, 139)
+    --grey: rgb(107, 121, 13
+    9) */ 
 }
+
 
 @keyframes up-down {
     0% {
@@ -74,6 +81,10 @@
     background-size: 0% 0%;
 }
 
+.fullbg { 
+    background-color: var(--nav-color);
+}
+
 #spoiler {
     background-color: black;
     color: black;
@@ -82,4 +93,20 @@
 
 #spoiler:hover {
     cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }

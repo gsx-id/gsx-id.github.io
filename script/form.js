@@ -75,7 +75,10 @@ fetch(jsonUrl).then(response => {
         topupMessage.innerText = `Please pick the nominal to Top Up`
         submitBtn.addEventListener("click", (_event) => {
             let result = '';
-
+            let inputInformation = document.getElementById("input-information")
+            if (inputInformation.value.length <= 0){
+                return;
+            }
             for (let i = 0; i < 12; i++) {
                 const randomIndex = Math.floor(Math.random() * characters.length);
                 result += characters.charAt(randomIndex);
