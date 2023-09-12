@@ -26,6 +26,14 @@ h5 {
     text-decoration: none
 }
 
-.footer-url:hover, .footer-url:focus{
-    color: var(--dark-torquise);
+#tiktok:hover {
+    color: navajowhite;
+}
+
+#instagram:hover {
+    color: hotpink;
+}
+
+#website:hover {
+    color: var(--custom-green)
 }
