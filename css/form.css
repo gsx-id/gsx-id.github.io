@@ -34,7 +34,7 @@ body {
 
 .step {
     border: 3px solid black;
-    background-image: linear-gradient(to bottom right, lightblue, aliceblue);
+    background-color: var(--nav-color);
     border-radius: 15px;
     width: 40ch;
     padding: 1em;

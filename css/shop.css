@@ -42,7 +42,7 @@ main {
 .game-card{
     border: 3px solid black;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom right, var(--card-color2), var(--card-color1));
+    background-image: linear-gradient(to bottom right, lightblue, var(--shadow));
     padding-bottom: 1em;
     color: white;
     overflow-y: hidden;
@@ -53,7 +53,7 @@ main {
 .game-card:hover{
     transform: scale(1.1);
     cursor: pointer;
-    background-image: linear-gradient(to bottom right, var(--card-color1), var(--card-color2));
+    background-image: linear-gradient(to bottom right, var(--shadow), lightblue);
 }
 
 .game-title-container {
@@ -63,7 +63,6 @@ main {
 }
 
 .game-title {
-    color: inherit;
     font-size: 0.7em;
     margin: 0 auto;
 }
@@ -93,7 +92,7 @@ main {
     cursor: pointer;
 }
 
-#free-fire:hover {
-    color: var(--geno-green);
+#freeFire:hover {
+    color: green;
     cursor: pointer;
 }

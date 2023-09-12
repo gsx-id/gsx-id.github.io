@@ -6,7 +6,7 @@
 }
 
 .navbar {
-    background-color: var(--nav-color);
+    background-color: var(--dark-blue);
 }
 
 .navlist {
@@ -23,19 +23,19 @@
 .navitem {
     display: inline-block;
     padding: 0.5em;
-    border: 2px solid black;
-    color: var(--dark-torquise);
+    color: white;
+    border: 2px solid white;
     border-radius: 8px;
-    background-image: linear-gradient(#92AA83, #92AA83);
+    background-image: linear-gradient(var(--shadow), var(--shadow));
     background-repeat: no-repeat;
-    transition: background-size .5s, color .5s;
+    transition: background-size .5s, color .5s, border-color .3s;
     cursor: pointer;
 }
 
 .navitem:hover{
     background-size: 100% 100%;
-    color: white;
-    border-color: white;
+    color: black;
+    border-color: green
 }
 
 .userprofile{

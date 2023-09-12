@@ -5,7 +5,7 @@ h5 {
 
 .footer-container {
     padding-top: 1em;
-    background-color: var(--nav-color);
+    background-color: var(--dark-blue);
     color: white;
     font-size: 0.6em;
 }

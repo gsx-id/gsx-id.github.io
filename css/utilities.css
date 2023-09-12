@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 :root {
-    --background-color: #80A497;
+    --background-color:  #343D4C;
     --font-color:  #B4EDD2;
-    --nav-color: #343D4C;
+    --nav-color: #80A497;
     --card-color1: #7a968b;
     --card-color2: #526A61;
     /* --background-color: rgb(33, 37, 43);*/
@@ -27,10 +27,10 @@
     --custom-orange: rgb(255, 209, 115);
 
     /* Dark Theme */
-    /* --dark-blue: rgb(31, 36, 48);
+    --dark-blue: rgb(31, 36, 48);
     --shadow: rgb(46, 77, 112);
     --grey: rgb(107, 121, 13
-    9) */ 
+    9) 
 }
 
 
@@ -82,7 +82,8 @@
 }
 
 .fullbg { 
-    background-color: var(--nav-color);
+    background-color: var(--dark-blue);
+    
 }
 
 #spoiler {
