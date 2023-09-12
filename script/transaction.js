@@ -51,7 +51,7 @@ setTimeout(() => {
         `
         document.getElementById("copybutton").addEventListener("click", (_event) => {
             navigator.clipboard.writeText(accountInformation);
-            alert("Copied the text: " + accountInformation);
+            alert("Copied your account information");
         })
 
         document.getElementById("spoiler").addEventListener("click", (_event) => {
