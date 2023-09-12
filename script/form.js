@@ -5,7 +5,8 @@ const description = document.getElementById("description")
 const topupMessage = document.getElementById("topup-message")
 const itemName = searchParams.get("item")
 const submitBtn = document.getElementById("submit")
-const accountInput = document.getElementById("account") 
+const accountInput = document.getElementById("account")
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 let item, target, overrideCurrency;
 fetch(jsonUrl).then(response => {
     if (!response.ok) {
@@ -73,6 +74,14 @@ fetch(jsonUrl).then(response => {
         
         topupMessage.innerText = `Please pick the nominal to Top Up`
         submitBtn.addEventListener("click", (_event) => {
+            let result = '';
+
+            for (let i = 0; i < 12; i++) {
+                const randomIndex = Math.floor(Math.random() * characters.length);
+                result += characters.charAt(randomIndex);
+            }
+            localStorage.setItem("accountInformation", document.getElementById("input-information").value)
+            document.getElementById("input-information").value = result
             localStorage.setItem("time", new Date().toDateString())
             if (overrideCurrency){
                 localStorage.setItem("currencyName", overrideCurrency.howMany);
@@ -82,7 +91,7 @@ fetch(jsonUrl).then(response => {
                 localStorage.setItem("currency", target.getAttribute("value"))
             }
             localStorage.setItem("price", target.getAttribute("price"))
-            localStorage.setItem("accountInformation", document.getElementById("input-information").value)
+            
         })
     }).catch(error => {
         // Handle errors, such as network issues or JSON parsing errors
