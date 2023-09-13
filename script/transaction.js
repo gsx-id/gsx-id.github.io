@@ -6,6 +6,7 @@ const currency = localStorage.getItem("currency")
 const price = localStorage.getItem("price")
 const time = localStorage.getItem("time")
 const accountInformation = localStorage.getItem("accountInformation")
+const payment = localStorage.getItem("payment")
 let miliseconds = 1000
 let process = "."
 
@@ -39,11 +40,11 @@ setTimeout(() => {
     setTimeout(() => {
         if (!isNaN(currency)){
             description.innerHTML = `
-            Thanks for trusting our site! Pleasure doing business with you. You bought <strong>${currency}</strong> total of <strong>${currencyName}</strong> for <strong>${price}</strong> IDR at <strong>${time}</strong><br>Account Information: <span id="spoiler"><strong>${accountInformation}</strong><br></span>
+            Thanks for trusting our site! Pleasure doing business with you. You bought <strong>${currency}</strong> total of <strong>${currencyName}</strong> for <strong>${price}</strong> IDR at <strong>${time}</strong> with <strong>${payment}</strong><br>Account Information: <span id="spoiler"><strong>${accountInformation}</strong><br></span>
             `
         } else {
             description.innerHTML = `
-            Thanks for trusting our site! Pleasure doing business with you. You bought <strong>${currency}</strong> for <strong>${price}</strong> IDR at <strong>${time}</strong><br>Account Information: <span id="spoiler">${accountInformation}</span><br>
+            Thanks for trusting our site! Pleasure doing business with you. You bought <strong>${currency}</strong> for <strong>${price}</strong> IDR at <strong>${time}</strong> with <strong>${payment}</strong><br>Account Information: <span id="spoiler">${accountInformation}</span><br>
             `
         }
         document.getElementById("buttonbox").innerHTML = `

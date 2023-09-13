@@ -1,13 +1,15 @@
 const jsonUrl = 'https://gsx-id.github.io/data.json';
 const searchParams = new URLSearchParams(window.location.search);
 const checkboxes = document.getElementById("checkboxes")
+const payments = document.getElementById("payments")
 const description = document.getElementById("description")
 const topupMessage = document.getElementById("topup-message")
 const itemName = searchParams.get("item")
 const submitBtn = document.getElementById("submit")
 const accountInput = document.getElementById("account")
 const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-let item, target, overrideCurrency;
+let item, target, overrideCurrency, payment;
+
 fetch(jsonUrl).then(response => {
     if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -71,12 +73,36 @@ fetch(jsonUrl).then(response => {
                 target.style.color = "white"
             })
         })
+
+        Array.from(payments.children).forEach((child) => {
+            child.addEventListener("click", (event) => {
+                if (event.target.className == "payment-icon"){
+                    let parent = event.target.parentElement
+                    if (payment){
+                        payment.style.backgroundColor = "white"
+                        payment = parent
+                    } else {
+                        payment = parent
+                    }
+                    parent.style.backgroundColor = "red"
+                    return;
+                }
+
+                if (payment){
+                    payment.style.backgroundColor = "white"
+                    payment = event.target
+                } else {
+                    payment = event.target
+                }
+                payment.style.backgroundColor = "red";
+            })
+        })
         
         topupMessage.innerText = `Please pick the nominal to Top Up`
         submitBtn.addEventListener("click", (_event) => {
             let result = '';
             let inputInformation = document.getElementById("input-information")
-            if (inputInformation.value.length <= 0){
+            if (inputInformation.value.length <= 0 || !payment || !target){
                 return;
             }
             for (let i = 0; i < 12; i++) {
@@ -94,8 +120,10 @@ fetch(jsonUrl).then(response => {
                 localStorage.setItem("currency", target.getAttribute("value"))
             }
             localStorage.setItem("price", target.getAttribute("price"))
+            localStorage.setItem("payment", payment.id)
             
         })
+        
     }).catch(error => {
         // Handle errors, such as network issues or JSON parsing errors
         console.error('Fetch error:', error);

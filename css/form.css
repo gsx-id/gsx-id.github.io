@@ -23,7 +23,7 @@ body {
     align-items: center;
 }
 
-.checkboxes {
+.form-container {
     display: flex;
     flex-wrap: wrap;
     flex-flow: column;
@@ -60,17 +60,18 @@ body {
     transform: scale(1.1);
 }
 
-.checkbox-box {
+.box {
     border: 3px solid black;
     border-radius: 10px;
     padding: 0.3em;
     width: fit-content;
-    transition: background-color 350ms, color 350ms;
+    transition: background-color 350ms, color 350ms, transform 200ms;
     background-color: white;
 }
 
-.checkbox-box:hover {
+.box:hover, .box:focus {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 #input-information {
